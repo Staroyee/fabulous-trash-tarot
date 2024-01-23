@@ -1,17 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import "./App.css";
+import Card from "./Pages/Card/Card";
 
 function App() {
   return (
     <>
-    <section className="background">
-      <Header />
-      <section className="container">
-        <Home />
-      </section>
-      <Footer />
+      <section className="background">
+        <Router>
+          <Header />
+          <section className="container">
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/card" element={<Card />} />
+            </Routes>
+          </section>
+          <Footer />
+        </Router>
       </section>
     </>
   );

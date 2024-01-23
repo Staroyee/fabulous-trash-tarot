@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    margin: 20px;
+    background-color: #301d30;
+    border-radius: 10px;
+    width: 240px;
+    height: 420px;
+}
+
+.card2 {
+    margin: 20px;
+    background-color: #301d30;
+    border-radius: 10px;
+    width: 240px;
+    height: 420px;
+}
+
+.card-image {
+    border-radius: 10px;
+}
