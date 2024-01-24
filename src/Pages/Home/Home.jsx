@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap";
 
 const Home = () => {
@@ -15,9 +16,11 @@ const Home = () => {
           </Col>
         </Row>
         <Row>
+          <Link to="/card">
           <button>
             Card
           </button>
+          </Link>
         </Row>
       </Container>
     </>
