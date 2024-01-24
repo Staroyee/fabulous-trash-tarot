@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
 import { Navbar, Container } from "react-bootstrap";
-import "./header.css"
+import "./header.css";
 
 const Header = () => {
   return (
     <>
       <Navbar className="navbar">
         <Container className="container">
-          <h1 className="title">Fabulous Trash</h1>
+          <Link to="/">
+            <h1 className="title">Fabulous Spells</h1>
+          </Link>
         </Container>
       </Navbar>
     </>

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap";
+import "./home.css"
 
 const Home = () => {
   return (
     <>
-      <Container>
+      <Container className="home-container">
         <Row>
           <Col>
             <h1>Tarot</h1>

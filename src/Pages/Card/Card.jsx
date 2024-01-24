@@ -40,7 +40,7 @@ const Card = () => {
   return (
     <>
       <Container>
-        <Row className="container">
+        <Row className="card-container">
           <Col>
             <div className="card1">
               <img

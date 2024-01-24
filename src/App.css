@@ -3,8 +3,15 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background {
