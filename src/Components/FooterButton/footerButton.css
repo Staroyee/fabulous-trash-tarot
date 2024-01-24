@@ -1,0 +1,13 @@
+.footer-button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #463939;
+    color: #ab15ab;
+}
+
+.footer-button:hover {
+    border-radius: 10px;
+    background-color: #301d30;
+}

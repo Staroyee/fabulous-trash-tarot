@@ -61,7 +61,7 @@ const Card = () => {
             >
               <motion.div
                 transition={{ ease: "easeOut", duration: 0.4 }}
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.04 }}
               >
                 {isAnimationComplete ? (
                   <Link
