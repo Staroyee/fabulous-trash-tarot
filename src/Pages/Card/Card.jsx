@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
@@ -9,7 +10,20 @@ import CardBack3 from "../../assets/images/card-back-3.png";
 import "./card.css";
 
 const Card = () => {
-  const cardArray = [CardBack, CardBack2, CardBack3];
+  const cardArray = [
+    {
+      card: CardBack,
+      link: "https://www.fabuloustrash.com.au/",
+    },
+    {
+      card: CardBack2,
+      link: "https://www.fabuloustrash.com.au/shop",
+    },
+    {
+      card: CardBack3,
+      link: "https://www.fabuloustrash.com.au/about",
+    },
+  ];
 
   function getRandomCard() {
     const randomIndex = Math.floor(Math.random() * cardArray.length);
@@ -50,14 +64,20 @@ const Card = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 {isAnimationComplete ? (
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    transition={{ ease: "easeOut", duration: 0.5 }}
-                    animate={{ opacity: 100 }}
-                    src={randomCard}
-                    alt="front-of-tarot-card"
-                    className="card-image"
-                  />
+                  <Link
+                    to={randomCard.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <motion.img
+                      initial={{ opacity: 0 }}
+                      transition={{ ease: "easeOut", duration: 0.5 }}
+                      animate={{ opacity: 100 }}
+                      src={randomCard.card}
+                      alt="front-of-tarot-card"
+                      className="card-image"
+                    />
+                  </Link>
                 ) : (
                   <img
                     src={CardBack}
