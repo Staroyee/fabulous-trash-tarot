@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Royal";
+  src: local("RoyalSignage-Rg"),
+    url("./assets/fonts/RoyalSignage-Rg.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barkentina";
+  src: local("Barkentina1"),
+    url("./assets/fonts/Barkentina1.otf") format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +20,7 @@ a {
 }
 
 .container {
+  font-family: Royal, Barkentina, sans-serif;
   flex-grow: 1;
   display: flex;
   justify-content: center;

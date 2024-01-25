@@ -25,7 +25,7 @@ const Footer = () => {
             />
             <FooterButton
               className="footer-button"
-              val="FAQ"
+              val="Faq"
               link="https://www.fabuloustrash.com.au/faq"
             />
             <FooterButton

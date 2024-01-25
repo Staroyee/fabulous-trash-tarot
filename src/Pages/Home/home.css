@@ -5,3 +5,7 @@
     flex-direction: column;
     height: 70dvh;
 }
+
+.home-button {
+    font-family: Barkentina, Royal, sans-serif;
+}

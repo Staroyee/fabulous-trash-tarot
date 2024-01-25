@@ -18,7 +18,7 @@ const Home = () => {
         </Row>
         <Row>
           <Link to="/card">
-          <button>
+          <button className="home-button">
             Card
           </button>
           </Link>
